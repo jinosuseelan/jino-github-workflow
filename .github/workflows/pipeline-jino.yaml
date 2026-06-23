@@ -26,4 +26,6 @@ jobs:
       with:
         context:
         push: true
-        tags: jinotest/demo-nginx:latest
+        tags: | 
+          jinotest/demo-nginx:latest
+        jinotest/demo-nginx:${{ github.sha }} 
